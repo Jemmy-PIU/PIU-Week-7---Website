@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Week 7 - Jemmy</title>
+    <style>
+      .t1bg {
+        background-color: #ffab40;
+      }
+
+      .t2bg {
+        background-color: rgb(0, 172, 252);
+      }
+
+      .t3bg {
+        background-color: rgb(229, 255, 0);
+      }
+
+      .t4bg {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body class="p-3">
+    <!-- Task 1 -->
+    <h1 class="text-center my-3">TASK 1: Convert input number to string</h1>
+    <div class="container container-md container-lg t1bg">
+      <div class="row py-3">
+        <div
+          class="col-12 col-lg-4 mx-auto justify-content-center align-items-center text-center"
+        >
+          <h3 class="mb-3">Number to string converter</h3>
+          <input
+            id="Num"
+            name="number"
+            class="form-control"
+            type="number"
+            placeholder="Enter number"
+            aria-label="default input example"
+          />
+          <p
+            class="mt-2 mb-0 text-center justify-content-center align-items-center"
+            id="rt"
+            style="display: none"
+          >
+            x
+          </p>
+          <button onclick="cvNumTxt()" class="btn btn-primary mt-2">
+            Convert
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col mx-auto align-items-center justify-content-center text-center"
+        >
+          <div
+            class="g-ytsubscribe"
+            data-channelid="UCkED3Vpj8ybH3wjatakQa_w"
+            data-layout="full"
+            data-count="default"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task 2 -->
+    <h1 class="text-center my-3">TASK 2: Check Palindrome Numbers</h1>
+    <div class="container container-md container-lg t2bg">
+      <div class="row py-3">
+        <div
+          class="col-12 col-lg-4 mx-auto justify-content-center align-items-center text-center"
+        >
+          <h3 class="mb-3">Check if a number is Palindrome</h3>
+          <input
+            id="palNum"
+            class="form-control"
+            type="number"
+            placeholder="Enter a number or use 'pal(number)' in the console tab"
+            aria-label="default input example"
+          />
+          <button onclick="pal()" class="btn btn-success mt-2">Check</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col mx-auto align-items-center justify-content-center text-center"
+        >
+          <div
+            class="g-ytsubscribe"
+            data-channelid="UCkED3Vpj8ybH3wjatakQa_w"
+            data-layout="full"
+            data-count="default"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task 3 -->
+    <h1 class="text-center my-3">TASK 3: Sorting an array</h1>
+    <div class="container container-md container-lg t3bg">
+      <div class="row py-3">
+        <div
+          class="col-12 col-lg-4 mx-auto justify-content-center align-items-center text-center"
+        >
+          <h3>Enter an array separated by a comma</h3>
+          <h4 class="mb-3">
+            Example: 9,2,3,4,5,... (<i>for console use: [9,2,...]</i>)
+          </h4>
+          <input
+            id="arrayInput"
+            class="form-control"
+            type="text"
+            placeholder="Enter an array or use 'sortxd(array)' in the console tab"
+            aria-label="default input example"
+          />
+          <button onclick="sortxd()" class="btn btn-danger mt-2">
+            Sort Now
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col mx-auto align-items-center justify-content-center text-center"
+        >
+          <div
+            class="g-ytsubscribe"
+            data-channelid="UCkED3Vpj8ybH3wjatakQa_w"
+            data-layout="full"
+            data-count="default"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task 4 -->
+    <h1 class="text-center my-3">TASK 4: Sum function</h1>
+    <div class="container container-md container-lg t4bg">
+      <div class="row py-3">
+        <div
+          class="col-12 col-lg-4 mx-auto justify-content-center align-items-center text-center"
+        >
+          <h3>Enter numbers separated by a comma</h3>
+          <h4 class="mb-3">Example: 9,2,3,4,5,...</h4>
+          <input
+            id="sumInput"
+            class="form-control"
+            type="text"
+            placeholder="Enter numbers or use 'sum(9,2,3,...)' in the console tab"
+            aria-label="default input example"
+          />
+          <button onclick="summ()" class="btn btn-warning mt-2">
+            Calculate Sum
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col mx-auto align-items-center justify-content-center text-center"
+        >
+          <div
+            class="g-ytsubscribe"
+            data-channelid="UCkED3Vpj8ybH3wjatakQa_w"
+            data-layout="full"
+            data-count="default"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script>
+      // Task 1 Function
+      function cvNumTxt() {
+        var rt = document.getElementById("rt");
+        var n = document.getElementById("Num").value;
+        if (!n) {
+          rt.innerHTML = "Must input numbers!";
+          rt.style.color = "red";
+          rt.style.display = "flex";
+        } else {
+          console.log("hi");
+          rt.style.display = "none";
+          var txtNum = [
+            "zero",
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine",
+          ];
+
+          const xd = n.split("");
+          for (var i = 0; i < n.length; i++) {
+            var temp_n = 0;
+            temp_n = xd[i];
+            xd[i] = txtNum[temp_n];
+          }
+          rt.style.color = "green";
+          rt.innerHTML = xd.join("");
+          rt.style.display = "flex";
+        }
+      }
+
+      // Task 2 Function
+
+      function pal(n) {
+        var t2input = document.getElementById("palNum").value;
+
+        if (!n || isNaN(n)) {
+          if (!t2input) {
+            console.log("Provide a number! Example: pal(12321) ");
+            alert("Enter a number!");
+            return;
+          } else {
+            n = t2input;
+          }
+        }
+
+        var rem,
+          temp,
+          final = 0;
+        temp = n;
+
+        while (n > 0) {
+          rem = n % 10;
+          n = parseInt(n / 10);
+          final = final * 10 + rem;
+        }
+
+        if (final == temp) {
+          console.log(`The number ${temp} is Palindrome`);
+          alert(`The number ${temp} is Palindrome`);
+        } else {
+          console.log(`The number ${temp} is not Palindrome`);
+          alert(`The number is ${temp} not Palindrome`);
+        }
+      }
+
+      // Task 3 Function
+
+      function sortxd(arrn) {
+        var t3input = document.getElementById("arrayInput").value;
+        if (!arrn) {
+          if (!t3input) {
+            alert("Enter an array!");
+            console.log("Enter an array!");
+            return;
+          } else {
+            arrn = t3input.split(",");
+            arr = arrn;
+          }
+        } else {
+          arr = arrn;
+        }
+        var status = false;
+        while (!status) {
+          status = true;
+          for (var i = 1; i < arr.length; i++) {
+            if (arr[i - 1] > arr[i]) {
+              status = false;
+              var tmp = arr[i - 1];
+              arr[i - 1] = arr[i];
+              arr[i] = tmp;
+            }
+          }
+        }
+        console.log("Sorted array: " + arr);
+        alert("Sorted array: " + arr);
+        return;
+      }
+
+      // Task 4 Function
+
+      function summ() {
+        // For UI
+        var t4input = document.getElementById("sumInput").value;
+        const sumlst = t4input.split(",");
+        var summ = 0;
+        for (var i = 0; i < sumlst.length; i++) {
+          summ = summ + parseInt(sumlst[i]);
+        }
+        alert("The sum of the numbers: " + summ);
+        console.log("The sum of the numbers: " + summ);
+      }
+
+      function sum() {
+        // For console
+        var summ = 0;
+        for (var i = 0; i < arguments.length; i++) {
+          summ = summ + parseInt(arguments[i]);
+        }
+        alert("The sum of the numbers: " + summ);
+        console.log("The sum of the numbers: " + summ);
+      }
+    </script>
+  </body>
+</html>
